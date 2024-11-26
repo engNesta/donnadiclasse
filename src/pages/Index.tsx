@@ -34,8 +34,8 @@ const Index = () => {
           </div>
         </div>
         
-        <div className="w-full py-8 text-center bg-black">
-          <p className="text-xl font-playfair text-soft-white">
+        <div className="w-full py-8 text-center bg-black overflow-hidden">
+          <p className="text-xl font-playfair text-soft-white animate-[marquee_20s_linear_infinite]">
             Website under construction - Vi arbetar med att göra hemsidan ännu bättre!
           </p>
         </div>
