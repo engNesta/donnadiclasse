@@ -22,7 +22,7 @@
 }
 
 .hero-overlay {
-  @apply absolute top-0 left-0 w-full h-full bg-soft-white/92 flex items-center justify-center;
+  @apply absolute top-0 left-0 w-full h-full bg-[rgba(248,248,248,0.92)] flex items-center justify-center;
 }
 
 .btn-primary {
