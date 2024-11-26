@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-montserrat bg-white text-rich-black;
+    @apply font-montserrat bg-soft-white text-rich-black;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-playfair;
@@ -14,18 +14,18 @@
 }
 
 .hero-gradient {
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+  background: linear-gradient(rgba(248, 248, 248, 0.92), rgba(248, 248, 248, 0.92)),
               url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&q=80');
   background-size: cover;
   background-position: center;
 }
 
 .btn-primary {
-  @apply px-6 py-3 bg-italian-red text-white font-montserrat font-medium 
+  @apply px-6 py-3 bg-italian-red text-soft-white font-montserrat font-medium 
          transition-all duration-300 hover:bg-rich-black rounded-none;
 }
 
 .btn-secondary {
   @apply px-6 py-3 border-2 border-italian-red text-italian-red font-montserrat font-medium 
-         transition-all duration-300 hover:bg-italian-red hover:text-white rounded-none;
+         transition-all duration-300 hover:bg-italian-red hover:text-soft-white rounded-none;
 }

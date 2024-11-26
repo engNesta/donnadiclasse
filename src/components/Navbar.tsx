@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-white shadow-sm py-4">
+    <nav className="w-full bg-soft-white shadow-sm py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="font-playfair text-2xl font-bold">
           DONNA DI CLASSE

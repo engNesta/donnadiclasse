@@ -21,7 +21,9 @@ export default {
       colors: {
         "italian-red": "#CE2B37",
         "italian-green": "#009246",
-        "rich-black": "#1A1A1A",
+        "rich-black": "#2A2A2A",
+        "soft-white": "#F8F8F8",
+        "soft-gray": "#F1F0FB",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
