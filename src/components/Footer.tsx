@@ -5,17 +5,17 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="font-playfair text-xl mb-4">Besök oss</h3>
-            <p>Västra Storgatan 32</p>
-            <p>Kristianstad</p>
+            <p className="font-montserrat">Västra Storgatan 32</p>
+            <p className="font-montserrat">Kristianstad</p>
           </div>
           <div>
             <h3 className="font-playfair text-xl mb-4">Kontakt</h3>
-            <p>Email: info@donnadiclasse.se</p>
-            <p>Tel: +46-XXX-XXXX</p>
+            <p className="font-montserrat">Email: info@donnadiclasse.se</p>
+            <p className="font-montserrat">Tel: +46-XXX-XXXX</p>
           </div>
         </div>
         <div className="border-t border-soft-white/10 mt-8 pt-8 text-center">
-          <p>© 2024 Donna di Classe. All rights reserved.</p>
+          <p className="font-montserrat">© 2024 Donna di Classe. All rights reserved.</p>
         </div>
       </div>
     </footer>
