@@ -8,21 +8,13 @@ const Index = () => {
       <Navbar />
       
       <main className="flex-grow">
-        {/* Hero Section */}
-        <div className="hero-video-wrapper">
-          <video 
-            className="hero-video"
-            autoPlay 
-            muted 
-            loop 
-            playsInline
-          >
-            <source 
-              src="https://player.vimeo.com/external/451991234.sd.mp4?s=a3f3c5f4d9f8e4f4e4f4e4f4e4f4e4f4e4f4e4f4&profile_id=165&oauth2_token_id=57447761" 
-              type="video/mp4" 
-            />
-            Your browser does not support the video tag.
-          </video>
+        {/* Hero Section with background image */}
+        <div 
+          className="relative w-full h-screen bg-cover bg-center"
+          style={{
+            backgroundImage: `url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7')`
+          }}
+        >
           <div className="hero-overlay">
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4">
