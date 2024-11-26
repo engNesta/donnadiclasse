@@ -1,12 +1,54 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      <Navbar />
+      
+      <main className="flex-grow">
+        {/* Hero Section */}
+        <div className="hero-gradient py-20 animate-fade-in">
+          <div className="container mx-auto px-4 text-center">
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4">
+              DONNA DI CLASSE
+            </h1>
+            <h2 className="text-xl md:text-2xl font-playfair italic mb-2">
+              Italienskt dammode i Kristianstad
+            </h2>
+            <p className="text-lg md:text-xl font-playfair">
+              Dare to be beautiful
+            </p>
+          </div>
+        </div>
+
+        {/* Main Content */}
+        <div className="container mx-auto px-4 py-16">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <p className="text-lg leading-relaxed">
+              Vad trevligt att du har hittat till vår underbara lilla butik! Här nedan kan du klicka dig vidare till vårt breda produktutbud av högkvalitativt, elegant och glamoröst dammode för alla åldrar, former och tillställningar.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Har du några frågor? Tveka inte att höra av dig till oss så hjälper vi dig att hitta det perfekta plagget för just dig.
+            </p>
+            <p className="text-lg leading-relaxed">
+              Varmt välkommen in till oss på Västra Storgatan 32 i Kristianstad för optimerad personlig service!
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
+              <Link to="/products" className="btn-primary">
+                Explore Products
+              </Link>
+              <Link to="/contact" className="btn-secondary">
+                Contact Us
+              </Link>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
     </div>
   );
 };
