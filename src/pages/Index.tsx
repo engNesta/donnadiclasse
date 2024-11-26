@@ -18,7 +18,7 @@ const Index = () => {
             className="hero-video"
             poster="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
           >
-            <source src="https://player.vimeo.com/progressive_redirect/playback/726278518/rendition/720p/file.mp4?loc=external&oauth2_token_id=1747418641&signature=c2a6d2b7b9c7c6b8c5c6b8c5c6b8c5c6b8c5c6b8" type="video/mp4" />
+            <source src="/IntroVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="hero-overlay">
