@@ -46,26 +46,26 @@ const Navbar = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-white/30 backdrop-blur-sm md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-white md:hidden">
             <div className="flex flex-col items-center py-4 space-y-4">
               <Link 
                 to="/" 
                 onClick={handleClick}
-                className="text-soft-white hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
               >
                 Hem
               </Link>
               <Link 
                 to="/products" 
                 onClick={handleClick}
-                className="text-soft-white hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
               >
                 Produkter
               </Link>
               <Link 
                 to="/contact" 
                 onClick={handleClick}
-                className="text-soft-white hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
               >
                 Kontakt
               </Link>
