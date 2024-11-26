@@ -1,8 +1,22 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="w-full absolute z-10 py-4">
+    <nav className={`w-full fixed z-10 py-4 transition-all duration-300 ${
+      isScrolled ? "bg-white/30 backdrop-blur-md shadow-sm" : ""
+    }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="font-playfair text-2xl font-bold text-soft-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
           DONNA DI CLASSE
