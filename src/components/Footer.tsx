@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-soft-white py-4 mt-16">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
           <div>
             <h3 className="font-montserrat text-sm">Besök oss</h3>
             <p className="font-montserrat text-sm">Västra Storgatan 32</p>
