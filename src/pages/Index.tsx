@@ -24,7 +24,7 @@ const Index = () => {
               <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
                 DONNA DI CLASSE
               </h1>
-              <h2 className="text-xl md:text-2xl font-playfair italic mb-2 drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
+              <h2 className="text-xl md:text-2xl font-playfair mb-2 drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
                 Italienskt dammode i Kristianstad
               </h2>
               <p className="text-lg md:text-xl font-playfair drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)] opacity-0 animate-[fadeIn_1s_ease-in_forwards] delay-1000">
