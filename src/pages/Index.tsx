@@ -14,7 +14,7 @@ const Index = () => {
             muted 
             loop 
             playsInline 
-            className="hero-video fixed"
+            className="hero-video"
             poster="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
           >
             <source src="/IntroVideo.mp4" type="video/mp4" />
@@ -32,14 +32,6 @@ const Index = () => {
                 "Dare to be beautiful"
               </p>
             </div>
-          </div>
-        </div>
-
-        <div className="px-4 py-16 bg-transparent">
-          <div className="max-w-3xl mx-auto text-center space-y-6 text-rich-black">
-            <p className="text-lg leading-relaxed">
-              Vad trevligt att du har hittat till vår underbara lilla butik! Här nedan kan du klicka dig vidare till vårt breda produktutbud av högkvalitativt, elegant och glamoröst dammode för alla åldrar, former och tillställningar.
-            </p>
           </div>
         </div>
 
