@@ -15,7 +15,6 @@ const Index = () => {
             loop 
             playsInline 
             className="hero-video"
-            poster="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
           >
             <source src="/IntroVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
