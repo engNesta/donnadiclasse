@@ -10,23 +10,21 @@ const Index = () => {
       <main className="flex-grow">
         {/* Hero Section with background image */}
         <div 
-          className="relative w-full h-screen bg-cover bg-center"
+          className="relative w-full h-screen bg-cover bg-center flex items-center justify-center"
           style={{
             backgroundImage: `url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7')`
           }}
         >
-          <div className="hero-overlay">
-            <div className="text-center">
-              <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4">
-                DONNA DI CLASSE
-              </h1>
-              <h2 className="text-xl md:text-2xl font-playfair italic mb-2">
-                Italienskt dammode i Kristianstad
-              </h2>
-              <p className="text-lg md:text-xl font-playfair">
-                Dare to be beautiful
-              </p>
-            </div>
+          <div className="text-center text-soft-white drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4">
+              DONNA DI CLASSE
+            </h1>
+            <h2 className="text-xl md:text-2xl font-playfair italic mb-2">
+              Italienskt dammode i Kristianstad
+            </h2>
+            <p className="text-lg md:text-xl font-playfair">
+              Dare to be beautiful
+            </p>
           </div>
         </div>
 
