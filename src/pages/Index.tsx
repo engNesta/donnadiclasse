@@ -13,7 +13,9 @@ const Index = () => {
             autoPlay 
             muted 
             loop 
-            playsInline 
+            playsInline
+            webkit-playsinline="true"
+            preload="auto"
             className="absolute top-0 left-0 w-full h-full object-cover"
           >
             <source src="/IntroVideo.mp4" type="video/mp4" />
