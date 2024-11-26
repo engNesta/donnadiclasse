@@ -35,7 +35,7 @@ const Index = () => {
           </div>
         </div>
 
-        <div className="px-4 py-16">
+        <div className="px-4 py-16 bg-transparent">
           <div className="max-w-3xl mx-auto text-center space-y-6 text-rich-black">
             <p className="text-lg leading-relaxed">
               Vad trevligt att du har hittat till vår underbara lilla butik! Här nedan kan du klicka dig vidare till vårt breda produktutbud av högkvalitativt, elegant och glamoröst dammode för alla åldrar, former och tillställningar.
