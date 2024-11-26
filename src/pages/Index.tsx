@@ -21,8 +21,8 @@ const Index = () => {
             <source src="/IntroVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="hero-overlay">
-            <div className="text-center text-rich-black drop-shadow-lg">
+          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+            <div className="text-center text-soft-white drop-shadow-lg">
               <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4">
                 DONNA DI CLASSE
               </h1>
