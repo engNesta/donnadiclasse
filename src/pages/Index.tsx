@@ -29,7 +29,7 @@ const Index = () => {
                 Italienskt dammode i Kristianstad
               </h2>
               <p className="text-lg md:text-xl font-playfair drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
-                Dare to be beautiful
+                "Dare to be beautiful"
               </p>
             </div>
           </div>
