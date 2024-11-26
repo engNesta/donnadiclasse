@@ -14,11 +14,11 @@
 }
 
 .hero-video-wrapper {
-  @apply relative w-full h-screen overflow-hidden;
+  @apply relative w-full h-[calc(100vh-96px)] overflow-hidden;
 }
 
 .hero-video {
-  @apply absolute top-0 left-0 w-full h-full object-cover;
+  @apply absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto transform -translate-x-1/2 -translate-y-1/2 scale-[1.15] object-cover;
 }
 
 .btn-primary {
