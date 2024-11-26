@@ -46,7 +46,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Dropdown */}
         {isMenuOpen && (
-          <div className="absolute top-full left-0 right-0 bg-rich-black/95 backdrop-blur-sm md:hidden">
+          <div className="absolute top-full left-0 right-0 bg-white/30 backdrop-blur-sm md:hidden">
             <div className="flex flex-col items-center py-4 space-y-4">
               <Link 
                 to="/" 
