@@ -1,8 +1,22 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 const Index = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const overlayOpacity = Math.min(0.5 + (scrollPosition / 1000), 0.7);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
@@ -20,6 +34,10 @@ const Index = () => {
             <source src="/IntroVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+          <div 
+            className="absolute top-0 left-0 w-full h-full bg-black transition-opacity duration-300"
+            style={{ opacity: overlayOpacity }}
+          />
           <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
             <div className="text-center text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
               <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
@@ -36,8 +54,8 @@ const Index = () => {
         </div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 py-16">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
+        <div className="relative z-10">
+          <div className="max-w-3xl mx-auto text-center space-y-6 px-4 py-16 text-soft-white">
             <p className="text-lg leading-relaxed">
               Vad trevligt att du har hittat till vår underbara lilla butik! Här nedan kan du klicka dig vidare till vårt breda produktutbud av högkvalitativt, elegant och glamoröst dammode för alla åldrar, former och tillställningar.
             </p>
