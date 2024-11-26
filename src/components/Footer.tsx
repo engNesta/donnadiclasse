@@ -4,12 +4,12 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
-            <h3 className="font-playfair text-base mb-2">Besök oss</h3>
+            <h3 className="font-montserrat text-sm">Besök oss</h3>
             <p className="font-montserrat text-sm">Västra Storgatan 32</p>
             <p className="font-montserrat text-sm">Kristianstad</p>
           </div>
           <div>
-            <h3 className="font-playfair text-base mb-2">Kontakt</h3>
+            <h3 className="font-montserrat text-sm">Kontakt</h3>
             <p className="font-montserrat text-sm">Email: info@donnadiclasse.se</p>
             <p className="font-montserrat text-sm">Tel: +46-XXX-XXXX</p>
           </div>
