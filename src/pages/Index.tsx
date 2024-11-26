@@ -35,7 +35,7 @@ const Index = () => {
         </div>
         
         <div className="w-full py-8 text-center">
-          <p className="text-xl font-playfair text-italian-red">
+          <p className="text-xl font-playfair text-soft-white">
             Website under construction - Vi arbetar med att göra hemsidan ännu bättre!
           </p>
         </div>
