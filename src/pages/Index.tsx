@@ -8,13 +8,13 @@ const Index = () => {
       <Navbar />
       
       <main className="flex-grow">
-        <div className="hero-video-wrapper">
+        <div className="relative w-full h-[calc(100vh-0px)] overflow-hidden">
           <video 
             autoPlay 
             muted 
             loop 
             playsInline 
-            className="hero-video"
+            className="absolute top-0 left-0 w-full h-full object-cover"
           >
             <source src="/IntroVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
