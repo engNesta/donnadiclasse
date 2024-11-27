@@ -39,7 +39,7 @@ const ProductGrid = () => {
         ))}
       </div>
       <div className="text-center mt-12">
-        <Button className="btn-secondary text-sm text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
+        <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
           View More Collections
         </Button>
       </div>
