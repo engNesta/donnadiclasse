@@ -9,7 +9,7 @@ const ProductGrid = () => {
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      image: "/Products/introP2.jpg",
       alt: "Elegant Italian Fashion 2"
     },
     {
