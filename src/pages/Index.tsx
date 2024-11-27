@@ -21,15 +21,15 @@ const Index = () => {
             <source src="/IntroVideo.mp4" type="video/mp4" />
             Din webbläsare stöder inte videotaggen.
           </video>
-          <div className="absolute top-0 left-0 w-full h-[120vh] flex items-center justify-center">
-            <div className="text-center text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-              <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+          <div className="absolute top-0 left-0 w-full h-[120vh] flex items-center justify-center px-4 sm:px-6 lg:px-8">
+            <div className="text-center text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] max-w-3xl mx-auto">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-2 sm:mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
                 DONNA DI CLASSE
               </h1>
-              <h2 className="text-xl md:text-2xl font-playfair mb-2 drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-playfair mb-2 drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
                 Italienskt dammode i Kristianstad
               </h2>
-              <p className="text-lg md:text-xl font-playfair drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)] opacity-0 animate-[fadeIn_1s_ease-in_forwards] delay-1000">
+              <p className="text-base sm:text-lg md:text-xl font-playfair drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)] opacity-0 animate-[fadeIn_1s_ease-in_forwards] delay-1000">
                 "Våga vara vacker"
               </p>
             </div>

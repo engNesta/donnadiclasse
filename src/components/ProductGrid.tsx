@@ -25,10 +25,10 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-12">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
         {products.map((product) => (
-          <div key={product.id} className="group relative overflow-hidden aspect-[3/4]">
+          <div key={product.id} className="group relative overflow-hidden aspect-[3/4] rounded-sm">
             <img
               src={product.image}
               alt={product.alt}
@@ -38,7 +38,7 @@ const ProductGrid = () => {
           </div>
         ))}
       </div>
-      <div className="text-center mt-12">
+      <div className="text-center mt-8 sm:mt-12">
         <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
           Se Fler Kollektioner
         </Button>
