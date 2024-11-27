@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
+import ProductGrid from "../components/ProductGrid";
 
 const Index = () => {
   return (
@@ -41,6 +41,8 @@ const Index = () => {
           <div className="h-2 flex-1 bg-soft-white"></div>
           <div className="h-2 flex-1 bg-italian-red"></div>
         </div>
+
+        <ProductGrid />
       </main>
 
       <Footer />
