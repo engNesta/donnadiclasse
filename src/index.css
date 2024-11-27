@@ -27,6 +27,6 @@
 }
 
 .btn-secondary {
-  @apply px-6 py-3 border-2 border-italian-red text-italian-red font-montserrat font-medium 
-         transition-all duration-300 hover:bg-italian-red hover:text-soft-white rounded-none;
+  @apply px-6 py-3 bg-white text-rich-black border border-rich-black font-montserrat font-medium 
+         transition-all duration-300 hover:bg-rich-black hover:text-white rounded-full;
 }
