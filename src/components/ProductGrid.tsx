@@ -5,22 +5,22 @@ const ProductGrid = () => {
     {
       id: 1,
       image: "/Products/introPiece1.jpg",
-      alt: "Elegant Italian Fashion 1"
+      alt: "Elegant Italienskt Mode 1"
     },
     {
       id: 2,
       image: "/Products/introP2.jpg",
-      alt: "Elegant Italian Fashion 2"
+      alt: "Elegant Italienskt Mode 2"
     },
     {
       id: 3,
       image: "/Products/introP3.jpg",
-      alt: "Elegant Italian Fashion 3"
+      alt: "Elegant Italienskt Mode 3"
     },
     {
       id: 4,
       image: "/Products/introP4.jpg",
-      alt: "Elegant Italian Fashion 4"
+      alt: "Elegant Italienskt Mode 4"
     },
   ];
 
@@ -40,7 +40,7 @@ const ProductGrid = () => {
       </div>
       <div className="text-center mt-12">
         <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
-          View More Collections
+          Se Fler Kollektioner
         </Button>
       </div>
     </div>

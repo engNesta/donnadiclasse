@@ -19,7 +19,7 @@ const Index = () => {
             className="absolute top-0 left-0 w-full h-full object-cover"
           >
             <source src="/IntroVideo.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+            Din webbläsare stöder inte videotaggen.
           </video>
           <div className="absolute top-0 left-0 w-full h-[120vh] flex items-center justify-center">
             <div className="text-center text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
@@ -30,7 +30,7 @@ const Index = () => {
                 Italienskt dammode i Kristianstad
               </h2>
               <p className="text-lg md:text-xl font-playfair drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)] opacity-0 animate-[fadeIn_1s_ease-in_forwards] delay-1000">
-                "Dare to be beautiful"
+                "Våga vara vacker"
               </p>
             </div>
           </div>
