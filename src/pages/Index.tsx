@@ -35,6 +35,12 @@ const Index = () => {
             </div>
           </div>
         </div>
+        
+        <div className="w-full flex">
+          <div className="h-2 flex-1 bg-italian-green"></div>
+          <div className="h-2 flex-1 bg-soft-white"></div>
+          <div className="h-2 flex-1 bg-italian-red"></div>
+        </div>
       </main>
 
       <Footer />
