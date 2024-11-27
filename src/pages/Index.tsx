@@ -37,8 +37,8 @@ const Index = () => {
         </div>
         
         <div className="w-full py-8 text-center bg-black overflow-hidden">
-          <p className="text-xl font-playfair text-soft-white animate-[marquee_20s_linear_infinite]">
-            Website under construction - Vi arbetar med att göra hemsidan ännu bättre!
+          <p className="text-xl font-playfair text-soft-white animate-[marquee_40s_linear_infinite]">
+            Vad trevligt att du har hittat till vår underbara lilla butik! Här nedan kan du klicka dig vidare till vårt breda produktutbud av högkvalitativt, elegant och glamoröst dammode för alla åldrar, former och tillställningar. Har du några frågor? Tveka inte att höra av dig till oss så hjälper vi dig att hitta det perfekta plagget för just dig. Varmt välkommen in till oss på Västra Storgatan 32 i Kristianstad för optimerad personlig service!
           </p>
         </div>
       </main>
