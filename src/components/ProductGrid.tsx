@@ -28,11 +28,11 @@ const ProductGrid = () => {
     <div className="container mx-auto px-4 py-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {products.map((product) => (
-          <div key={product.id} className="group relative overflow-hidden">
+          <div key={product.id} className="group relative overflow-hidden aspect-[3/4]">
             <img
               src={product.image}
               alt={product.alt}
-              className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
