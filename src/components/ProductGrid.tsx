@@ -4,7 +4,7 @@ const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
+      image: "/Products/introPiece1.jpg",
       alt: "Elegant Italian Fashion 1"
     },
     {
