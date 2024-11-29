@@ -45,7 +45,7 @@ const ProductGrid = () => {
         </Button>
       </div>
       
-      <div className="text-center mt-12 p-8 w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] border-t-[12px] border-b-[12px] border-t-italian-green border-b-italian-red bg-white">
+      <div className="text-center mt-12 p-8 w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] border-t-[6px] border-b-[6px] border-t-italian-green border-b-italian-red bg-white">
         <h3 className="font-playfair text-2xl mb-6">Följ oss</h3>
         <div className="flex justify-center gap-6">
           <a 
