@@ -26,49 +26,44 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className="relative py-16" style={{
-      background: "linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%)",
-      boxShadow: "inset 0 0 100px rgba(0,0,0,0.1)"
-    }}>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 bg-white/80 backdrop-blur-sm rounded-lg shadow-xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
-          {products.map((product) => (
-            <div key={product.id} className="group relative overflow-hidden aspect-[3/4] rounded-sm">
-              <img
-                src={product.image}
-                alt={product.alt}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-          ))}
-        </div>
-        <div className="text-center mt-8 sm:mt-12">
-          <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
-            Se Fler Kollektioner
-          </Button>
-        </div>
-        
-        <div className="text-center mt-12">
-          <h3 className="font-playfair text-2xl mb-6">Följ oss</h3>
-          <div className="flex justify-center gap-6">
-            <a 
-              href="https://www.facebook.com/Donna.Di.Classe.Sweden" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-italian-red hover:text-rich-black transition-colors"
-            >
-              <Facebook size={32} />
-            </a>
-            <a 
-              href="https://www.instagram.com/donna.di.classe/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-italian-red hover:text-rich-black transition-colors"
-            >
-              <Instagram size={32} />
-            </a>
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        {products.map((product) => (
+          <div key={product.id} className="group relative overflow-hidden aspect-[3/4] rounded-sm">
+            <img
+              src={product.image}
+              alt={product.alt}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </div>
+        ))}
+      </div>
+      <div className="text-center mt-8 sm:mt-12">
+        <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
+          Se Fler Kollektioner
+        </Button>
+      </div>
+      
+      <div className="text-center mt-12">
+        <h3 className="font-playfair text-2xl mb-6">Följ oss</h3>
+        <div className="flex justify-center gap-6">
+          <a 
+            href="https://www.facebook.com/Donna.Di.Classe.Sweden" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-italian-red hover:text-rich-black transition-colors"
+          >
+            <Facebook size={32} />
+          </a>
+          <a 
+            href="https://www.instagram.com/donna.di.classe/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-italian-red hover:text-rich-black transition-colors"
+          >
+            <Instagram size={32} />
+          </a>
         </div>
       </div>
     </div>
