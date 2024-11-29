@@ -56,7 +56,7 @@ const Index = () => {
         <section className="py-16 bg-soft-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-montserrat text-center mb-8">
-              Visit Our Flagship Store
+              Besök Vår Butik
             </h2>
             <div className="max-w-4xl mx-auto">
               <div className="relative w-full aspect-video overflow-hidden rounded-sm">
@@ -74,7 +74,7 @@ const Index = () => {
                   }}
                 >
                   <source src="/LuxDorOp.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
+                  Din webbläsare stöder inte videotaggen.
                 </video>
               </div>
               <div className="text-center mt-8">
@@ -84,7 +84,7 @@ const Index = () => {
                   rel="noopener noreferrer"
                   className="btn-primary inline-block rounded-full hover:scale-95 transition-transform duration-300 focus:ring-2 focus:ring-italian-red focus:ring-opacity-50"
                 >
-                  Visit Our Store
+                  Besök Vår Butik
                 </a>
               </div>
             </div>
