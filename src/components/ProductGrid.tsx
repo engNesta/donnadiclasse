@@ -45,7 +45,7 @@ const ProductGrid = () => {
         </Button>
       </div>
       
-      <div className="text-center mt-12">
+      <div className="text-center mt-12 p-8 rounded-lg bg-gradient-to-r from-[#fdfcfb] to-[#e2d1c3] shadow-lg backdrop-blur-sm">
         <h3 className="font-playfair text-2xl mb-6">Följ oss</h3>
         <div className="flex justify-center gap-6">
           <a 
