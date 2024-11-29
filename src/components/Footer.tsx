@@ -3,12 +3,12 @@ import { Facebook, Instagram } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="bg-black text-soft-white">
+      <div className="w-full flex">
+        <div className="h-2 flex-1 bg-italian-green"></div>
+        <div className="h-2 flex-1 bg-soft-white"></div>
+        <div className="h-2 flex-1 bg-italian-red"></div>
+      </div>
       <div className="bg-black py-8">
-        <div className="w-full flex mb-8">
-          <div className="h-2 flex-1 bg-italian-green"></div>
-          <div className="h-2 flex-1 bg-soft-white"></div>
-          <div className="h-2 flex-1 bg-italian-red"></div>
-        </div>
         <h3 className="font-montserrat text-2xl mb-6 text-soft-white text-center">Följ oss</h3>
         <div className="flex justify-center gap-6">
           <a 
