@@ -28,11 +28,7 @@ const Footer = () => {
             <Instagram size={32} className="text-white hover:text-italian-red transition-colors" />
           </a>
         </div>
-        <div className="w-full flex mt-8">
-          <div className="h-2 flex-1 bg-italian-green"></div>
-          <div className="h-2 flex-1 bg-soft-white"></div>
-          <div className="h-2 flex-1 bg-italian-red"></div>
-        </div>
+        <div className="w-full h-[1px] bg-white/20 mt-8"></div>
       </div>
       <div className="container mx-auto px-4 py-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-center">
