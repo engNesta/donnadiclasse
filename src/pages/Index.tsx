@@ -1,6 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductGrid from "../components/ProductGrid";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -78,14 +79,12 @@ const Index = () => {
                 </video>
               </div>
               <div className="text-center mt-8">
-                <a 
-                  href="https://maps.google.com/?q=Västra+Storgatan+32+Kristianstad" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <Link 
+                  to="/contact"
                   className="btn-primary inline-block rounded-full hover:scale-95 transition-transform duration-300 focus:ring-2 focus:ring-italian-red focus:ring-opacity-50"
                 >
                   Besök Vår Butik
-                </a>
+                </Link>
               </div>
             </div>
           </div>
