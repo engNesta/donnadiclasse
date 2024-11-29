@@ -55,7 +55,7 @@ const Index = () => {
         {/* Store Visit Section */}
         <section className="py-16 bg-soft-white">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-playfair text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-montserrat text-center mb-8">
               Visit Our Flagship Store
             </h2>
             <div className="max-w-4xl mx-auto">
@@ -68,6 +68,11 @@ const Index = () => {
                   webkit-playsinline="true"
                   preload="auto"
                   className="w-full h-full object-cover"
+                  style={{ playbackRate: 0.75 }}
+                  onLoadedMetadata={(e) => {
+                    const video = e.target as HTMLVideoElement;
+                    video.playbackRate = 0.75;
+                  }}
                 >
                   <source src="/LuxDorOp.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
@@ -78,7 +83,7 @@ const Index = () => {
                   href="https://maps.google.com/?q=Västra+Storgatan+32+Kristianstad" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn-primary inline-block"
+                  className="btn-primary inline-block rounded-full hover:scale-95 transition-transform duration-300 focus:ring-2 focus:ring-italian-red focus:ring-opacity-50"
                 >
                   Visit Our Store
                 </a>
