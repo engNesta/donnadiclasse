@@ -30,6 +30,7 @@ const Navbar = () => {
           <Link to="/" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">Hem</Link>
           <Link to="/products" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">Produkter</Link>
           <Link to="/contact" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">Kontakt</Link>
+          <Link to="/for-companies" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">För Företag</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -61,6 +62,12 @@ const Navbar = () => {
                 className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
               >
                 Kontakt
+              </Link>
+              <Link 
+                to="/for-companies" 
+                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+              >
+                För Företag
               </Link>
             </div>
           </div>
