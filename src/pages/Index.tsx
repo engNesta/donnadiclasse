@@ -53,7 +53,7 @@ const Index = () => {
         <ProductGrid />
 
         {/* Store Visit Section */}
-        <section className="py-16 bg-gradient-to-b from-[#fdfcfb] to-white">
+        <section className="py-16 bg-gradient-to-b from-[#FEF6E4] via-[#fff8ed] to-white">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-montserrat text-center mb-8">
               Besök Vår Butik
