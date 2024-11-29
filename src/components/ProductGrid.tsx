@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 
 const ProductGrid = () => {
   const products = [
@@ -39,9 +40,11 @@ const ProductGrid = () => {
         ))}
       </div>
       <div className="text-center mt-8 sm:mt-12">
-        <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
-          Se Fler Kollektioner
-        </Button>
+        <Link to="/products">
+          <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
+            Se Fler Kollektioner
+          </Button>
+        </Link>
       </div>
     </div>
   );
