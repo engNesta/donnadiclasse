@@ -73,7 +73,7 @@ const Index = () => {
               <div className="text-center mt-8">
                 <Link 
                   to="/contact"
-                  className="btn-primary inline-block rounded-full hover:scale-95 transition-transform duration-300 focus:ring-2 focus:ring-italian-red focus:ring-opacity-50"
+                  className="btn-primary inline-block rounded-full hover:scale-95 transition-transform duration-300 focus:ring-2 focus:ring-italian-red focus:ring-opacity-50 text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
                 >
                   Besök Vår Butik
                 </Link>
