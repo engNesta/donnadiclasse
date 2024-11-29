@@ -1,5 +1,4 @@
 import { Button } from "./ui/button";
-import { Facebook, Instagram } from "lucide-react";
 
 const ProductGrid = () => {
   const products = [
@@ -43,28 +42,6 @@ const ProductGrid = () => {
         <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
           Se Fler Kollektioner
         </Button>
-      </div>
-      
-      <div className="text-center mt-12 p-8 w-screen relative left-[50%] right-[50%] ml-[-50vw] mr-[-50vw] border-t-[6px] border-b-[6px] border-t-italian-green border-b-italian-red bg-[#FEF6E4]">
-        <h3 className="font-montserrat text-2xl mb-6">Följ oss</h3>
-        <div className="flex justify-center gap-6">
-          <a 
-            href="https://www.facebook.com/Donna.Di.Classe.Sweden" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white hover:text-rich-black transition-colors"
-          >
-            <Facebook size={32} />
-          </a>
-          <a 
-            href="https://www.instagram.com/donna.di.classe/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-white hover:text-rich-black transition-colors"
-          >
-            <Instagram size={32} />
-          </a>
-        </div>
       </div>
     </div>
   );
