@@ -51,6 +51,41 @@ const Index = () => {
         </div>
 
         <ProductGrid />
+
+        {/* Store Visit Section */}
+        <section className="py-16 bg-soft-white">
+          <div className="container mx-auto px-4">
+            <h2 className="text-3xl md:text-4xl font-playfair text-center mb-8">
+              Visit Our Flagship Store
+            </h2>
+            <div className="max-w-4xl mx-auto">
+              <div className="relative w-full aspect-video overflow-hidden rounded-sm">
+                <video 
+                  autoPlay 
+                  muted 
+                  loop 
+                  playsInline
+                  webkit-playsinline="true"
+                  preload="auto"
+                  className="w-full h-full object-cover"
+                >
+                  <source src="/LuxDorOp.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div className="text-center mt-8">
+                <a 
+                  href="https://maps.google.com/?q=Västra+Storgatan+32+Kristianstad" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-block"
+                >
+                  Visit Our Store
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
