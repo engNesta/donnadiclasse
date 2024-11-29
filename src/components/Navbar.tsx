@@ -1,10 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full fixed z-10 py-4 transition-all duration-300 ${
-      isScrolled || isMenuOpen ? "bg-white/30 backdrop-blur-md shadow-sm" : ""
+      isScrolled || isMenuOpen || !isHomePage ? "bg-white/30 backdrop-blur-md shadow-sm" : ""
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="font-playfair text-2xl font-bold text-soft-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
