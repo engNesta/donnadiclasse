@@ -52,7 +52,7 @@ const ProductGrid = () => {
             href="https://www.facebook.com/Donna.Di.Classe.Sweden" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-italian-red hover:text-rich-black transition-colors"
+            className="text-white hover:text-rich-black transition-colors"
           >
             <Facebook size={32} />
           </a>
@@ -60,7 +60,7 @@ const ProductGrid = () => {
             href="https://www.instagram.com/donna.di.classe/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-italian-red hover:text-rich-black transition-colors"
+            className="text-white hover:text-rich-black transition-colors"
           >
             <Instagram size={32} />
           </a>
