@@ -29,10 +29,10 @@ const Navbar = () => {
         
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8">
-          <Link to="/" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">Hem</Link>
-          <Link to="/products" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">Produkter</Link>
-          <Link to="/contact" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">Kontakt</Link>
-          <Link to="/for-companies" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] cursor-not-allowed opacity-70">För Företag</Link>
+          <Link to="/" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] opacity-70">Hem</Link>
+          <Link to="/products" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] opacity-70">Produkter</Link>
+          <Link to="/contact" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] opacity-70">Kontakt</Link>
+          <Link to="/for-companies" className="text-soft-white hover:text-italian-red transition-colors drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] opacity-70">För Företag</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -49,25 +49,25 @@ const Navbar = () => {
             <div className="flex flex-col items-center py-4 space-y-4">
               <Link 
                 to="/" 
-                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+                className="text-rich-black hover:text-italian-red transition-colors opacity-70"
               >
                 Hem
               </Link>
               <Link 
                 to="/products" 
-                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+                className="text-rich-black hover:text-italian-red transition-colors opacity-70"
               >
                 Produkter
               </Link>
               <Link 
                 to="/contact" 
-                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+                className="text-rich-black hover:text-italian-red transition-colors opacity-70"
               >
                 Kontakt
               </Link>
               <Link 
                 to="/for-companies" 
-                className="text-rich-black hover:text-italian-red transition-colors cursor-not-allowed opacity-70"
+                className="text-rich-black hover:text-italian-red transition-colors opacity-70"
               >
                 För Företag
               </Link>
