@@ -68,7 +68,6 @@ const Index = () => {
                   webkit-playsinline="true"
                   preload="auto"
                   className="w-full h-full object-cover"
-                  style={{ playbackRate: 0.75 }}
                   onLoadedMetadata={(e) => {
                     const video = e.target as HTMLVideoElement;
                     video.playbackRate = 0.75;
