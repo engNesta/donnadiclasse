@@ -82,7 +82,7 @@ const Index = () => {
                   href="https://maps.google.com/?q=Västra+Storgatan+32+Kristianstad" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="btn-primary inline-block rounded-full hover:scale-95 transition-transform duration-300 focus:ring-2 focus:ring-italian-red focus:ring-opacity-50"
+                  className="btn-primary inline-block rounded-lg hover:scale-95 transition-transform duration-300 focus:ring-2 focus:ring-italian-red focus:ring-opacity-50"
                 >
                   Visit Our Store
                 </a>
