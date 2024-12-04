@@ -19,12 +19,16 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full fixed z-10 py-4 transition-all duration-300 ${
-      isScrolled || isMenuOpen || !isHomePage ? "bg-black/40 backdrop-blur-md shadow-sm" : ""
+      isScrolled || isMenuOpen || !isHomePage ? "bg-black/80 backdrop-blur-md shadow-sm" : ""
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="font-playfair text-2xl font-bold text-soft-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
           <span className="md:hidden">DDC</span>
-          <span className="hidden md:inline">DONNA DI CLASSE</span>
+          <span className="hidden md:inline">
+            <span className="text-italian-green">D.</span>{" "}
+            <span className="text-soft-white">D.</span>{" "}
+            <span className="text-italian-red">C.</span>
+          </span>
         </Link>
         
         {/* Desktop Menu */}
