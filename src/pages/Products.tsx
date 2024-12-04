@@ -62,7 +62,7 @@ const Products = () => {
               </CardHeader>
               <CardContent>
                 <img 
-                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+                  src="/Products/introPiece1.jpg"
                   alt="Clothes collection"
                   className="h-48 w-full object-cover rounded-md mb-4"
                 />
@@ -85,7 +85,7 @@ const Products = () => {
               </CardHeader>
               <CardContent>
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                  src="/Products/introP2.jpg"
                   alt="Bags collection"
                   className="h-48 w-full object-cover rounded-md mb-4"
                 />
@@ -108,7 +108,7 @@ const Products = () => {
               </CardHeader>
               <CardContent>
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                  src="/Products/introP3.jpg"
                   alt="Jewelry collection"
                   className="h-48 w-full object-cover rounded-md mb-4"
                 />
