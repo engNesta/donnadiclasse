@@ -22,7 +22,7 @@ const Navbar = () => {
       isScrolled || isMenuOpen || !isHomePage ? "bg-black/80 backdrop-blur-md shadow-sm" : ""
     }`}>
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="font-playfair text-2xl font-bold text-soft-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+        <Link to="/" className="font-playfair text-3xl font-bold text-soft-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
           <span className="md:hidden">DDC</span>
           <span className="hidden md:inline">
             <span className="text-italian-green">D.</span>{" "}
