@@ -20,7 +20,7 @@ const Products = () => {
           <p className="text-rich-black">Webbplatsen är under konstruktion</p>
         </div>
 
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8 mb-16">
           <h1 className="text-3xl md:text-4xl font-playfair text-center mb-12">
             Våra Kollektioner
           </h1>
