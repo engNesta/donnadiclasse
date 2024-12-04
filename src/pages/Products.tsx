@@ -55,7 +55,7 @@ const Products = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Clothes Card */}
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="bg-white transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl font-playfair">Kläder</CardTitle>
                 <CardDescription>Upptäck vår exklusiva klädkollektion</CardDescription>
@@ -78,7 +78,7 @@ const Products = () => {
             </Card>
 
             {/* Bags Card */}
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="bg-white transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl font-playfair">Väskor</CardTitle>
                 <CardDescription>Eleganta väskor för varje tillfälle</CardDescription>
@@ -101,7 +101,7 @@ const Products = () => {
             </Card>
 
             {/* Jewelry Card */}
-            <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <Card className="bg-white transition-all duration-300">
               <CardHeader>
                 <CardTitle className="text-2xl font-playfair">Smycken</CardTitle>
                 <CardDescription>Tidlösa smycken med italiensk design</CardDescription>
