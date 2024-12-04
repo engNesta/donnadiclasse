@@ -9,8 +9,36 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card";
+import { useState } from "react";
 
 const Products = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+
+  const productsByCategory = {
+    clothes: [
+      { id: 1, name: "Elegant Klänning", price: "2999 kr", image: "/Products/introPiece1.jpg" },
+      { id: 2, name: "Sommarklänning", price: "1999 kr", image: "/Products/introP2.jpg" },
+      { id: 3, name: "Kostym", price: "4999 kr", image: "/Products/introP3.jpg" },
+      { id: 4, name: "Aftonklänning", price: "3999 kr", image: "/Products/introP4.jpg" },
+    ],
+    bags: [
+      { id: 1, name: "Läderväska", price: "1999 kr", image: "/Products/introP2.jpg" },
+      { id: 2, name: "Handväska", price: "2499 kr", image: "/Products/introP3.jpg" },
+      { id: 3, name: "Axelremsväska", price: "1799 kr", image: "/Products/introP4.jpg" },
+      { id: 4, name: "Aftonväska", price: "2999 kr", image: "/Products/introPiece1.jpg" },
+    ],
+    jewelry: [
+      { id: 1, name: "Guldarmband", price: "999 kr", image: "/Products/introP3.jpg" },
+      { id: 2, name: "Halsband", price: "1499 kr", image: "/Products/introP4.jpg" },
+      { id: 3, name: "Örhängen", price: "799 kr", image: "/Products/introPiece1.jpg" },
+      { id: 4, name: "Ring", price: "1299 kr", image: "/Products/introP2.jpg" },
+    ],
+  };
+
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(selectedCategory === category ? null : category);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF6E4]">
       <Navbar />
@@ -36,7 +64,12 @@ const Products = () => {
                 <div className="h-48 bg-soft-gray rounded-md mb-4"></div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full btn-primary">Utforska Kläder</Button>
+                <Button 
+                  className={`w-full ${selectedCategory === 'clothes' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+                  onClick={() => handleCategoryClick('clothes')}
+                >
+                  Utforska Kläder
+                </Button>
               </CardFooter>
             </Card>
 
@@ -50,7 +83,12 @@ const Products = () => {
                 <div className="h-48 bg-soft-gray rounded-md mb-4"></div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full btn-primary">Utforska Väskor</Button>
+                <Button 
+                  className={`w-full ${selectedCategory === 'bags' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+                  onClick={() => handleCategoryClick('bags')}
+                >
+                  Utforska Väskor
+                </Button>
               </CardFooter>
             </Card>
 
@@ -64,10 +102,41 @@ const Products = () => {
                 <div className="h-48 bg-soft-gray rounded-md mb-4"></div>
               </CardContent>
               <CardFooter>
-                <Button className="w-full btn-primary">Utforska Smycken</Button>
+                <Button 
+                  className={`w-full ${selectedCategory === 'jewelry' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+                  onClick={() => handleCategoryClick('jewelry')}
+                >
+                  Utforska Smycken
+                </Button>
               </CardFooter>
             </Card>
           </div>
+
+          {/* Product Grid */}
+          {selectedCategory && (
+            <div className="mt-12 animate-fade-in">
+              <h2 className="text-2xl font-playfair text-center mb-8">
+                {selectedCategory === 'clothes' && 'Våra Kläder'}
+                {selectedCategory === 'bags' && 'Våra Väskor'}
+                {selectedCategory === 'jewelry' && 'Våra Smycken'}
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {productsByCategory[selectedCategory as keyof typeof productsByCategory].map((product) => (
+                  <div key={product.id} className="group relative overflow-hidden aspect-[3/4] rounded-sm">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                      <h3 className="text-white font-montserrat text-lg">{product.name}</h3>
+                      <p className="text-white font-montserrat">{product.price}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </main>
       <Footer />
