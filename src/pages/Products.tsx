@@ -61,7 +61,11 @@ const Products = () => {
                 <CardDescription>Upptäck vår exklusiva klädkollektion</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="h-48 bg-soft-gray rounded-md mb-4"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+                  alt="Clothes collection"
+                  className="h-48 w-full object-cover rounded-md mb-4"
+                />
               </CardContent>
               <CardFooter>
                 <Button 
@@ -80,7 +84,11 @@ const Products = () => {
                 <CardDescription>Eleganta väskor för varje tillfälle</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="h-48 bg-soft-gray rounded-md mb-4"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
+                  alt="Bags collection"
+                  className="h-48 w-full object-cover rounded-md mb-4"
+                />
               </CardContent>
               <CardFooter>
                 <Button 
@@ -99,7 +107,11 @@ const Products = () => {
                 <CardDescription>Tidlösa smycken med italiensk design</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="h-48 bg-soft-gray rounded-md mb-4"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+                  alt="Jewelry collection"
+                  className="h-48 w-full object-cover rounded-md mb-4"
+                />
               </CardContent>
               <CardFooter>
                 <Button 
