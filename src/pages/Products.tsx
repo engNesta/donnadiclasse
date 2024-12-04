@@ -55,7 +55,7 @@ const Products = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Clothes Card */}
-            <Card className="bg-white transition-all duration-300">
+            <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
               <CardHeader>
                 <CardTitle className="text-2xl font-playfair">Kläder</CardTitle>
                 <CardDescription>Upptäck vår exklusiva klädkollektion</CardDescription>
@@ -69,7 +69,7 @@ const Products = () => {
               </CardContent>
               <CardFooter>
                 <Button 
-                  className={`w-full ${selectedCategory === 'clothes' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+                  className={`w-full transition-all duration-500 ease-in-out ${selectedCategory === 'clothes' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
                   onClick={() => handleCategoryClick('clothes')}
                 >
                   Utforska Kläder
@@ -78,7 +78,7 @@ const Products = () => {
             </Card>
 
             {/* Bags Card */}
-            <Card className="bg-white transition-all duration-300">
+            <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
               <CardHeader>
                 <CardTitle className="text-2xl font-playfair">Väskor</CardTitle>
                 <CardDescription>Eleganta väskor för varje tillfälle</CardDescription>
@@ -92,7 +92,7 @@ const Products = () => {
               </CardContent>
               <CardFooter>
                 <Button 
-                  className={`w-full ${selectedCategory === 'bags' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+                  className={`w-full transition-all duration-500 ease-in-out ${selectedCategory === 'bags' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
                   onClick={() => handleCategoryClick('bags')}
                 >
                   Utforska Väskor
@@ -101,7 +101,7 @@ const Products = () => {
             </Card>
 
             {/* Jewelry Card */}
-            <Card className="bg-white transition-all duration-300">
+            <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
               <CardHeader>
                 <CardTitle className="text-2xl font-playfair">Smycken</CardTitle>
                 <CardDescription>Tidlösa smycken med italiensk design</CardDescription>
@@ -115,7 +115,7 @@ const Products = () => {
               </CardContent>
               <CardFooter>
                 <Button 
-                  className={`w-full ${selectedCategory === 'jewelry' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+                  className={`w-full transition-all duration-500 ease-in-out ${selectedCategory === 'jewelry' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
                   onClick={() => handleCategoryClick('jewelry')}
                 >
                   Utforska Smycken
@@ -126,7 +126,7 @@ const Products = () => {
 
           {/* Product Grid */}
           {selectedCategory && (
-            <div className="mt-12 animate-fade-in">
+            <div className="mt-12 animate-fade-in transition-all duration-500 ease-in-out">
               <h2 className="text-2xl font-playfair text-center mb-8">
                 {selectedCategory === 'clothes' && 'Våra Kläder'}
                 {selectedCategory === 'bags' && 'Våra Väskor'}
