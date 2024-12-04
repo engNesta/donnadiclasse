@@ -19,7 +19,7 @@ const Contact = () => {
             <p className="mb-8">Vi ser fram emot att höra från dig!</p>
             <div className="space-y-4">
               <p>Email: info@donnadiclasse.se</p>
-              <p>Tel: +46-XXX-XXXX</p>
+              <p>Tel: +46 44-21 00 55</p>
               <p>Adress: Västra Storgatan 32, Kristianstad</p>
             </div>
           </div>
