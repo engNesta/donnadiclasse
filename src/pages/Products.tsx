@@ -126,7 +126,13 @@ const Products = () => {
 
           {/* Product Grid */}
           {selectedCategory && (
-            <div className="mt-12 animate-fade-in transition-all duration-500 ease-in-out">
+            <div 
+              className="mt-12 opacity-0 animate-[fadeIn_0.8s_ease-in-out_forwards] transition-all duration-700"
+              style={{
+                animationFillMode: 'forwards',
+                willChange: 'opacity, transform'
+              }}
+            >
               <h2 className="text-2xl font-playfair text-center mb-8">
                 {selectedCategory === 'clothes' && 'Våra Kläder'}
                 {selectedCategory === 'bags' && 'Våra Väskor'}
@@ -151,7 +157,7 @@ const Products = () => {
           )}
         </div>
       </main>
-      <Footer />
+      <Footer className="transition-all duration-500 ease-in-out" />
     </div>
   );
 };
