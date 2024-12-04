@@ -1,8 +1,12 @@
 import { Facebook, Instagram } from "lucide-react";
 
-const Footer = () => {
+interface FooterProps {
+  className?: string;
+}
+
+const Footer = ({ className = "" }: FooterProps) => {
   return (
-    <footer className="bg-black text-soft-white">
+    <footer className={`bg-black text-soft-white ${className}`}>
       <div className="w-full flex">
         <div className="h-2 flex-1 bg-italian-green"></div>
         <div className="h-2 flex-1 bg-soft-white"></div>
