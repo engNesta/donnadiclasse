@@ -29,7 +29,7 @@ const CategoryCard = ({
     <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
       <CardHeader>
         <CardTitle className="text-2xl font-playfair">{title}</CardTitle>
-        <CardDescription className="whitespace-nowrap overflow-hidden text-ellipsis">{description}</CardDescription>
+        <CardDescription className="w-full whitespace-nowrap overflow-hidden text-ellipsis">{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <img 
