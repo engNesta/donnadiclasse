@@ -25,8 +25,8 @@ const Index = () => {
           <div className="absolute top-0 left-0 w-full h-[120vh] flex items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="text-center text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] max-w-3xl mx-auto">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-2 sm:mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-                <span className="text-italian-green">D</span>ONNA 
-                <span className="text-soft-white">D</span>I 
+                <span className="text-italian-green">D</span>ONNA&nbsp;&nbsp;
+                <span className="text-soft-white">D</span>I&nbsp;&nbsp;
                 <span className="text-italian-red">C</span>LASSE
               </h1>
               <h2 className="text-lg sm:text-xl md:text-2xl font-playfair mb-2 drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
