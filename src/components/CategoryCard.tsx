@@ -25,7 +25,7 @@ const CategoryCard = ({
         className="w-full h-full object-cover"
       />
       <div className="text-center">
-        <h3 className="text-2xl font-montserrat">{title}</h3>
+        <h6 className="text-2xl font-montserrat">{title}</h6>
       </div>
     </div>
   );
