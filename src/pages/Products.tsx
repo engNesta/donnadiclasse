@@ -28,21 +28,8 @@ const Products = () => {
     ],
   };
 
-  const handleCategoryClick = (category: string) => {
+  const handleCategorySelect = (category: string) => {
     setSelectedCategory(selectedCategory === category ? null : category);
-  };
-
-  const getCategoryName = (category: string) => {
-    switch (category) {
-      case 'clothes':
-        return 'Kläder';
-      case 'bags':
-        return 'Väskor';
-      case 'jewelry':
-        return 'Smycken';
-      default:
-        return '';
-    }
   };
 
   return (
@@ -57,13 +44,14 @@ const Products = () => {
           
           <CategoriesGrid 
             selectedCategory={selectedCategory}
-            onCategorySelect={handleCategoryClick}
+            onCategorySelect={handleCategorySelect}
           />
 
           {selectedCategory && (
             <ProductDisplay
               products={productsByCategory[selectedCategory as keyof typeof productsByCategory]}
-              categoryName={getCategoryName(selectedCategory)}
+              categoryName={selectedCategory === 'clothes' ? 'Kläder' : 
+                          selectedCategory === 'bags' ? 'Väskor' : 'Smycken'}
             />
           )}
         </div>

@@ -18,11 +18,16 @@ const CategoryCard = ({
   onSelect,
 }: CategoryCardProps) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div 
+      className="flex flex-col gap-4 cursor-pointer transition-all duration-300 hover:scale-[1.02]"
+      onClick={onSelect}
+    >
       <img 
         src={imageSrc}
         alt={imageAlt}
-        className="w-full h-full object-cover"
+        className={`w-full h-full object-cover transition-all duration-300 ${
+          isSelected ? 'scale-[1.02]' : ''
+        }`}
       />
       <div className="text-center">
         <h6 className="text-lg font-montserrat">{title}</h6>
