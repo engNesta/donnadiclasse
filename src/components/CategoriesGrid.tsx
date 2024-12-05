@@ -22,7 +22,7 @@ const CategoriesGrid = ({ selectedCategory, onCategorySelect }: CategoriesGridPr
     {
       id: 'jewelry',
       title: 'Smycken',
-      description: 'Tidlösa smycken med italiensk design',
+      description: 'Tidlösa italiensk smycken',
       image: '/Products/introP3.jpg',
     },
   ];
