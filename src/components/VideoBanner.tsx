@@ -15,6 +15,15 @@ const VideoBanner = () => {
       </video>
       {/* Add a semi-transparent overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30"></div>
+      
+      {/* Add D.D.C. text overlay */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+          <span className="text-italian-green">D.</span>{" "}
+          <span className="text-soft-white">D.</span>{" "}
+          <span className="text-italian-red">C.</span>
+        </h1>
+      </div>
     </div>
   );
 };
