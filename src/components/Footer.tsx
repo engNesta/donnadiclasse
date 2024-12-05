@@ -12,7 +12,7 @@ const Footer = ({ className = "" }: FooterProps) => {
         <div className="h-2 flex-1 bg-soft-white"></div>
         <div className="h-2 flex-1 bg-italian-red"></div>
       </div>
-      <div className="bg-black py-8">
+      <div className="bg-black py-4">
         <h3 className="font-montserrat text-2xl mb-6 text-soft-white text-center">Följ oss</h3>
         <div className="flex justify-center gap-6">
           <a 
