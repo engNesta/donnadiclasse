@@ -56,9 +56,9 @@ const Index = () => {
 
         {/* Store Visit Section */}
         <section className="py-16 bg-gradient-to-b from-[#FEF6E4] via-[#fff8ed] to-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="relative w-full aspect-video overflow-hidden rounded-sm">
+          <div className="w-full px-0">
+            <div className="w-full">
+              <div className="relative w-full aspect-video overflow-hidden">
                 <video 
                   autoPlay 
                   muted 
