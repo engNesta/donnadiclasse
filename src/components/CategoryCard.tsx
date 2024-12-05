@@ -29,7 +29,7 @@ const CategoryCard = ({
         className="h-48 w-full object-cover"
       />
       <Button 
-        className={`w-full transition-all duration-500 ease-in-out ${isSelected ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+        className={`w-full py-2 text-sm transition-all duration-500 ease-in-out ${isSelected ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
         onClick={onSelect}
       >
         Utforska {title}
