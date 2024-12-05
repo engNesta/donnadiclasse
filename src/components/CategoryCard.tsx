@@ -26,7 +26,7 @@ const CategoryCard = ({
   onSelect,
 }: CategoryCardProps) => {
   return (
-    <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
+    <Card className="bg-[#FEF6E4] shadow-lg transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
       <CardHeader>
         <CardTitle className="text-2xl font-playfair">{title}</CardTitle>
         <CardDescription className="w-full whitespace-nowrap overflow-hidden text-ellipsis">{description}</CardDescription>
