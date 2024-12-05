@@ -1,14 +1,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { Button } from "../components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../components/ui/card";
+import CategoriesGrid from "../components/CategoriesGrid";
+import ProductDisplay from "../components/ProductDisplay";
 import { useState } from "react";
 
 const Products = () => {
@@ -39,6 +32,19 @@ const Products = () => {
     setSelectedCategory(selectedCategory === category ? null : category);
   };
 
+  const getCategoryName = (category: string) => {
+    switch (category) {
+      case 'clothes':
+        return 'Kläder';
+      case 'bags':
+        return 'Väskor';
+      case 'jewelry':
+        return 'Smycken';
+      default:
+        return '';
+    }
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF6E4]">
       <Navbar />
@@ -49,110 +55,20 @@ const Products = () => {
             Våra Kollektioner
           </h1>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
-              <CardHeader>
-                <CardTitle className="text-2xl font-playfair">Kläder</CardTitle>
-                <CardDescription>Upptäck vår exklusiva klädkollektion</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img 
-                  src="/Products/introPiece1.jpg"
-                  alt="Clothes collection"
-                  className="h-48 w-full object-cover rounded-md mb-4"
-                />
-              </CardContent>
-              <CardFooter>
-                <Button 
-                  className={`w-full transition-all duration-500 ease-in-out ${selectedCategory === 'clothes' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
-                  onClick={() => handleCategoryClick('clothes')}
-                >
-                  Utforska Kläder
-                </Button>
-              </CardFooter>
-            </Card>
+          <CategoriesGrid 
+            selectedCategory={selectedCategory}
+            onCategorySelect={handleCategoryClick}
+          />
 
-            {/* Bags Card */}
-            <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
-              <CardHeader>
-                <CardTitle className="text-2xl font-playfair">Väskor</CardTitle>
-                <CardDescription>Eleganta väskor för varje tillfälle</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img 
-                  src="/Products/introP2.jpg"
-                  alt="Bags collection"
-                  className="h-48 w-full object-cover rounded-md mb-4"
-                />
-              </CardContent>
-              <CardFooter>
-                <Button 
-                  className={`w-full transition-all duration-500 ease-in-out ${selectedCategory === 'bags' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
-                  onClick={() => handleCategoryClick('bags')}
-                >
-                  Utforska Väskor
-                </Button>
-              </CardFooter>
-            </Card>
-
-            {/* Jewelry Card */}
-            <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
-              <CardHeader>
-                <CardTitle className="text-2xl font-playfair">Smycken</CardTitle>
-                <CardDescription>Tidlösa smycken med italiensk design</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <img 
-                  src="/Products/introP3.jpg"
-                  alt="Jewelry collection"
-                  className="h-48 w-full object-cover rounded-md mb-4"
-                />
-              </CardContent>
-              <CardFooter>
-                <Button 
-                  className={`w-full transition-all duration-500 ease-in-out ${selectedCategory === 'jewelry' ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
-                  onClick={() => handleCategoryClick('jewelry')}
-                >
-                  Utforska Smycken
-                </Button>
-              </CardFooter>
-            </Card>
-          </div>
-
-          {/* Product Grid */}
           {selectedCategory && (
-            <div 
-              className="mt-12 opacity-0 animate-[fadeIn_0.8s_ease-in-out_forwards] transition-all duration-700"
-              style={{
-                animationFillMode: 'forwards',
-                willChange: 'opacity, transform'
-              }}
-            >
-              <h2 className="text-2xl font-playfair text-center mb-8">
-                {selectedCategory === 'clothes' && 'Våra Kläder'}
-                {selectedCategory === 'bags' && 'Våra Väskor'}
-                {selectedCategory === 'jewelry' && 'Våra Smycken'}
-              </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {productsByCategory[selectedCategory as keyof typeof productsByCategory].map((product) => (
-                  <div key={product.id} className="group relative overflow-hidden aspect-[3/4] rounded-sm">
-                    <img
-                      src={product.image}
-                      alt={product.name}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                      <h3 className="text-white font-montserrat text-lg">{product.name}</h3>
-                      <p className="text-white font-montserrat">{product.price}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+            <ProductDisplay
+              products={productsByCategory[selectedCategory as keyof typeof productsByCategory]}
+              categoryName={getCategoryName(selectedCategory)}
+            />
           )}
         </div>
       </main>
-      <Footer className="transition-all duration-500 ease-in-out" />
+      <Footer />
     </div>
   );
 };
