@@ -21,7 +21,6 @@ const CategoryCard = ({
     <div className="flex flex-col gap-4">
       <div className="space-y-2">
         <h3 className="text-2xl font-playfair">{title}</h3>
-        <p className="text-sm text-gray-600">{description}</p>
       </div>
       <img 
         src={imageSrc}
