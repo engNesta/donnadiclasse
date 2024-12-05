@@ -24,9 +24,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="font-playfair text-3xl font-bold text-soft-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
           <span className="md:hidden">
-            <span className="text-italian-green">D</span>
-            <span className="text-soft-white">D</span>
-            <span className="text-italian-red">C</span>
+            <span className="text-italian-green">D.</span>{" "}
+            <span className="text-soft-white">D.</span>{" "}
+            <span className="text-italian-red">C.</span>
           </span>
           <span className="hidden md:inline">
             <span className="text-italian-green">D.</span>{" "}
