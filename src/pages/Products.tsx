@@ -35,9 +35,6 @@ const Products = () => {
       <VideoBanner />
       <main className="flex-grow">
         <div className="container mx-auto px-4 py-8 mb-16">
-          <h1 className="text-3xl md:text-4xl font-playfair text-center mb-12">
-            Våra Kollektioner
-          </h1>
           <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto font-montserrat">
             Våra produkter är helt inspirerade av italiensk design och hantverk. Vi strävar efter att leverera högsta kvalitet i varje detalj, från material till finish, och erbjuder tidlös elegans med äkta italienskt arv.
           </p>
