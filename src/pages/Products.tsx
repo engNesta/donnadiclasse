@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CategoriesGrid from "../components/CategoriesGrid";
 import ProductDisplay from "../components/ProductDisplay";
+import VideoBanner from "../components/VideoBanner";
 import { useState } from "react";
 
 const Products = () => {
@@ -28,15 +29,11 @@ const Products = () => {
     ],
   };
 
-  const handleCategorySelect = (category: string) => {
-    setSelectedCategory(selectedCategory === category ? null : category);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF6E4]">
       <Navbar />
-      
-      <main className="flex-grow pt-20">
+      <VideoBanner />
+      <main className="flex-grow">
         <div className="container mx-auto px-4 py-8 mb-16">
           <h1 className="text-3xl md:text-4xl font-playfair text-center mb-12">
             Våra Kollektioner
@@ -47,7 +44,7 @@ const Products = () => {
           
           <CategoriesGrid 
             selectedCategory={selectedCategory}
-            onCategorySelect={handleCategorySelect}
+            onCategorySelect={setSelectedCategory}
           />
 
           {selectedCategory && (
