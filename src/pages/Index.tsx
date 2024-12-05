@@ -75,6 +75,14 @@ const Index = () => {
                   <source src="/LuxDorOp.mp4" type="video/mp4" />
                   Din webbläsare stöder inte videotaggen.
                 </video>
+                {/* Add a semi-transparent overlay */}
+                <div className="absolute inset-0 bg-black bg-opacity-30"></div>
+                {/* Add the text overlay with fade-in animation */}
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 animate-[fadeIn_1s_ease-in_forwards] delay-1000">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+                    Besök vår butik
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
