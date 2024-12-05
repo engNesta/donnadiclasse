@@ -19,14 +19,14 @@ const CategoryCard = ({
 }: CategoryCardProps) => {
   return (
     <div className="flex flex-col gap-4">
-      <div className="space-y-2">
-        <h3 className="text-2xl font-playfair">{title}</h3>
-      </div>
       <img 
         src={imageSrc}
         alt={imageAlt}
         className="w-full h-full object-cover"
       />
+      <div className="text-center">
+        <h3 className="text-2xl font-montserrat">{title}</h3>
+      </div>
     </div>
   );
 };
