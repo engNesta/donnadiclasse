@@ -4,6 +4,10 @@ import ProductGrid from "../components/ProductGrid";
 import { Link } from "react-router-dom";
 
 const Index = () => {
+  const handleStoreVisitClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-[#FEF6E4]">
       <Navbar />
@@ -78,7 +82,11 @@ const Index = () => {
                 {/* Add a semi-transparent overlay */}
                 <div className="absolute inset-0 bg-black bg-opacity-30"></div>
                 {/* Add the text overlay with fade-in animation */}
-                <Link to="/contact" className="absolute inset-0 flex items-center justify-center opacity-0 animate-[fadeIn_1s_ease-in_forwards] delay-1000 cursor-pointer hover:bg-black hover:bg-opacity-40 transition-colors">
+                <Link 
+                  to="/contact" 
+                  className="absolute inset-0 flex items-center justify-center opacity-0 animate-[fadeIn_1s_ease-in_forwards] delay-1000 cursor-pointer hover:bg-black hover:bg-opacity-40 transition-colors"
+                  onClick={handleStoreVisitClick}
+                >
                   <h2 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
                     Besök vår butik
                   </h2>
