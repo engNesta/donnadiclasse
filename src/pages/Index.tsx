@@ -57,9 +57,6 @@ const Index = () => {
         {/* Store Visit Section */}
         <section className="py-16 bg-gradient-to-b from-[#FEF6E4] via-[#fff8ed] to-white">
           <div className="container mx-auto px-4">
-            <h3 className="text-2xl md:text-3xl font-montserrat text-center mb-8">
-              Besök Vår Butik
-            </h3>
             <div className="max-w-4xl mx-auto">
               <div className="relative w-full aspect-video overflow-hidden rounded-sm">
                 <video 
