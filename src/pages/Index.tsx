@@ -22,6 +22,8 @@ const Index = () => {
             <source src="/IntroVideo.mp4" type="video/mp4" />
             Din webbläsare stöder inte videotaggen.
           </video>
+          {/* Add a semi-transparent black overlay */}
+          <div className="absolute top-0 left-0 w-full h-full bg-black opacity-5"></div>
           <div className="absolute top-0 left-0 w-full h-[120vh] flex items-center justify-center px-4 sm:px-6 lg:px-8">
             <div className="text-center text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] max-w-3xl mx-auto">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-2 sm:mb-4 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
