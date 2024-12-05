@@ -26,7 +26,7 @@ const CategoryCard = ({
       <img 
         src={imageSrc}
         alt={imageAlt}
-        className="h-48 w-full object-cover"
+        className="w-full h-full object-cover"
       />
       <Button 
         className={`w-full py-2 text-sm transition-all duration-500 ease-in-out ${isSelected ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
