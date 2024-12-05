@@ -2,7 +2,10 @@ import { Button } from "./ui/button";
 import {
   Card,
   CardContent,
+  CardDescription,
   CardFooter,
+  CardHeader,
+  CardTitle,
 } from "./ui/card";
 
 interface CategoryCardProps {
@@ -24,6 +27,10 @@ const CategoryCard = ({
 }: CategoryCardProps) => {
   return (
     <Card className="bg-[#FEF6E4] shadow-lg transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
+      <CardHeader>
+        <CardTitle className="text-2xl font-playfair">{title}</CardTitle>
+        <CardDescription className="w-full whitespace-nowrap overflow-hidden text-ellipsis">{description}</CardDescription>
+      </CardHeader>
       <CardContent>
         <img 
           src={imageSrc}
@@ -33,7 +40,7 @@ const CategoryCard = ({
       </CardContent>
       <CardFooter>
         <Button 
-          className={`w-full h-8 text-sm transition-all duration-500 ease-in-out ${isSelected ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
+          className={`w-full transition-all duration-500 ease-in-out ${isSelected ? 'bg-italian-red text-white' : 'bg-white text-italian-red'}`}
           onClick={onSelect}
         >
           Utforska {title}
