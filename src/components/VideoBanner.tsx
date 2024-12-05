@@ -9,6 +9,10 @@ const VideoBanner = () => {
         webkit-playsinline="true"
         preload="auto"
         className="absolute top-0 left-0 w-full h-full object-cover"
+        onLoadedMetadata={(e) => {
+          const video = e.target as HTMLVideoElement;
+          video.playbackRate = 0.4;
+        }}
       >
         <source src="/bannerVid.mp4" type="video/mp4" />
         Din webbläsare stöder inte videotaggen.
