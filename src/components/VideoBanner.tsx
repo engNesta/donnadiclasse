@@ -19,9 +19,9 @@ const VideoBanner = () => {
       {/* Add D.D.C. text overlay */}
       <div className="absolute bottom-4 right-4">
         <h1 className="text-lg md:text-xl lg:text-2xl font-playfair font-bold text-soft-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
-          <span className="text-italian-green">D.</span>{" "}
           <span className="text-soft-white">D.</span>{" "}
-          <span className="text-italian-red">C.</span>
+          <span className="text-soft-white">D.</span>{" "}
+          <span className="text-soft-white">C.</span>
         </h1>
       </div>
     </div>
