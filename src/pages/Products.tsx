@@ -44,17 +44,12 @@ const Products = () => {
       <Navbar />
       
       <main className="flex-grow pt-20">
-        <div className="w-full bg-italian-red/10 py-2 text-center">
-          <p className="text-rich-black">Webbplatsen är under konstruktion</p>
-        </div>
-
         <div className="container mx-auto px-4 py-8 mb-16">
           <h1 className="text-3xl md:text-4xl font-playfair text-center mb-12">
             Våra Kollektioner
           </h1>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Clothes Card */}
             <Card className="bg-white transition-all duration-500 ease-in-out transform hover:scale-[1.02]">
               <CardHeader>
                 <CardTitle className="text-2xl font-playfair">Kläder</CardTitle>
