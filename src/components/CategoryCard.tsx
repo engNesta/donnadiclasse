@@ -17,10 +17,19 @@ const CategoryCard = ({
   isSelected,
   onSelect,
 }: CategoryCardProps) => {
+  const handleClick = () => {
+    onSelect();
+    // Find the products grid and scroll to it
+    const productsGrid = document.querySelector('[data-products-grid]');
+    if (productsGrid) {
+      productsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div 
       className="flex flex-col gap-4 cursor-pointer transition-all duration-300 hover:scale-[1.02]"
-      onClick={onSelect}
+      onClick={handleClick}
     >
       <img 
         src={imageSrc}

@@ -13,6 +13,7 @@ interface ProductDisplayProps {
 const ProductDisplay = ({ products, categoryName }: ProductDisplayProps) => {
   return (
     <div 
+      data-products-grid
       className="mt-12 opacity-0 animate-[fadeIn_0.8s_ease-in-out_forwards] transition-all duration-700"
       style={{
         animationFillMode: 'forwards',
