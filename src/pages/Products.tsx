@@ -33,7 +33,7 @@ const Products = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: '#fffaf9f6' }}>
+    <div className="min-h-screen flex flex-col bg-[#FEF6E4]">
       <Navbar />
       
       <main className="flex-grow pt-20">
