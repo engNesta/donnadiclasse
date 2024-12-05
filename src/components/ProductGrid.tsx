@@ -2,6 +2,10 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
 const ProductGrid = () => {
+  const handleProductsClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   const products = [
     {
       id: 1,
@@ -40,7 +44,7 @@ const ProductGrid = () => {
         ))}
       </div>
       <div className="text-center mt-8 sm:mt-12">
-        <Link to="/products">
+        <Link to="/products" onClick={handleProductsClick}>
           <Button className="btn-secondary text-sm text-italian-red hover:text-italian-red bg-white hover:scale-95 transition-transform duration-300 !bg-white">
             Se Fler Kollektioner
           </Button>
