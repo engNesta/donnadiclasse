@@ -29,6 +29,11 @@ const Index = () => {
                 <span className="text-soft-white">D</span>I&nbsp;&nbsp;
                 <span className="text-italian-red">C</span>LASSE
               </h1>
+              <div className="w-full flex h-1 mb-4">
+                <div className="h-full flex-1 bg-italian-green"></div>
+                <div className="h-full flex-1 bg-soft-white"></div>
+                <div className="h-full flex-1 bg-italian-red"></div>
+              </div>
               <h2 className="text-lg sm:text-xl md:text-2xl font-playfair mb-2 drop-shadow-[0_1px_3px_rgba(0,0,0,0.3)]">
                 Italienskt dammode i Kristianstad
               </h2>
