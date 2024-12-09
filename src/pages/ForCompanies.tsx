@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { ArrowRight, Hotel, Store, Spa } from "lucide-react";
+import { ArrowRight, Hotel, Store, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const ForCompanies = () => {
   const collaborationTypes = [
     {
       title: "Spa & Wellness",
-      icon: <Spa className="w-12 h-12 text-italian-red" />,
+      icon: <Building2 className="w-12 h-12 text-italian-red" />,
       description: "Förhöj din spamiljö med våra lyxiga textilier. Perfekt för att skapa en avkopplande och exklusiv atmosfär för dina gäster.",
       benefits: ["Specialpriser för företagskunder", "Skräddarsydda lösningar", "Regelbundna uppdateringar"]
     },
