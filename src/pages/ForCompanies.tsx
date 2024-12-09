@@ -33,9 +33,18 @@ const ForCompanies = () => {
       <Navbar />
       
       <main className="flex-grow pt-20">
-        {/* Header Section */}
-        <div className="w-full bg-rich-black py-16 text-center text-soft-white">
-          <div className="container mx-auto px-4">
+        {/* Header Section with Video Background */}
+        <div className="relative w-full bg-rich-black py-16 text-center text-soft-white overflow-hidden">
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            className="absolute top-0 left-0 w-full h-full object-cover opacity-40"
+          >
+            <source src="/LuxDorOp.mp4" type="video/mp4" />
+          </video>
+          <div className="relative container mx-auto px-4 z-10">
             <h1 className="text-4xl md:text-5xl font-playfair mb-4">Företagssamarbeten</h1>
             <p className="text-lg md:text-xl max-w-2xl mx-auto opacity-90">
               Upptäck möjligheterna med att samarbeta med Donna di Classe och lyft din verksamhet med våra exklusiva italienska textilier.
