@@ -30,7 +30,7 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
         {products.map((product) => (
           <div key={product.id} className="group relative overflow-hidden aspect-[3/4] rounded-sm">
