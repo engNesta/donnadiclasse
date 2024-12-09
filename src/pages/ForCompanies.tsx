@@ -44,26 +44,28 @@ const ForCompanies = () => {
         </div>
 
         {/* Collaboration Types Grid */}
-        <div className="container mx-auto px-4 py-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {collaborationTypes.map((type, index) => (
-              <div 
-                key={index}
-                className="bg-soft-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-rich-black/5"
-              >
-                <div className="mb-6">{type.icon}</div>
-                <h3 className="text-2xl font-playfair mb-4 text-rich-black">{type.title}</h3>
-                <p className="text-rich-black/70 mb-6">{type.description}</p>
-                <ul className="space-y-3">
-                  {type.benefits.map((benefit, idx) => (
-                    <li key={idx} className="flex items-center text-rich-black/80">
-                      <ArrowRight className="w-4 h-4 text-rich-black/60 mr-2" />
-                      {benefit}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+        <div className="bg-[#FEF6E4] py-16">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {collaborationTypes.map((type, index) => (
+                <div 
+                  key={index}
+                  className="bg-soft-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-rich-black/5"
+                >
+                  <div className="mb-6">{type.icon}</div>
+                  <h3 className="text-2xl font-playfair mb-4 text-rich-black">{type.title}</h3>
+                  <p className="text-rich-black/70 mb-6">{type.description}</p>
+                  <ul className="space-y-3">
+                    {type.benefits.map((benefit, idx) => (
+                      <li key={idx} className="flex items-center text-rich-black/80">
+                        <ArrowRight className="w-4 h-4 text-rich-black/60 mr-2" />
+                        {benefit}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
