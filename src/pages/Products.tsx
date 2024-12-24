@@ -10,10 +10,14 @@ const Products = () => {
 
   const productsByCategory = {
     clothes: [
-      { id: 1, name: "Elegant Klänning", price: "2999 kr", image: "/Products/introPiece1.jpg" },
-      { id: 2, name: "Sommarklänning", price: "1999 kr", image: "/Products/introP2.jpg" },
-      { id: 3, name: "Kostym", price: "4999 kr", image: "/Products/introP3.jpg" },
-      { id: 4, name: "Aftonklänning", price: "3999 kr", image: "/Products/introP4.jpg" },
+      { id: 1, name: "", price: "", image: "/Products/outfits/Outfit 1.jpg" },
+      { id: 2, name: "", price: "", image: "/Products/outfits/Outfit 2.jpg" },
+      { id: 3, name: "", price: "", image: "/Products/outfits/Outfit 3.jpg" },
+      { id: 4, name: "", price: "", image: "/Products/outfits/Outfit 4.jpg" },
+      { id: 5, name: "", price: "", image: "/Products/outfits/Outfit 5.jpg" },
+      { id: 6, name: "", price: "", image: "/Products/outfits/Outfit 6.jpg" },
+      { id: 7, name: "", price: "", image: "/Products/outfits/Outfit 7.jpg" },
+      { id: 8, name: "", price: "", image: "/Products/outfits/Outfit 8.jpg" },
     ],
     bags: [
       { id: 1, name: "", price: "", image: "/Products/Bags/Bag 1.jpg" },
