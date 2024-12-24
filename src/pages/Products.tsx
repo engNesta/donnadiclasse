@@ -25,12 +25,6 @@ const Products = () => {
       { id: 7, name: "", price: "", image: "/Products/Bags/Bag 7.jpg" },
       { id: 8, name: "", price: "", image: "/Products/Bags/Bag 8.jpg" },
     ],
-    jewelry: [
-      { id: 1, name: "Guldarmband", price: "999 kr", image: "/Products/introP3.jpg" },
-      { id: 2, name: "Halsband", price: "1499 kr", image: "/Products/introP4.jpg" },
-      { id: 3, name: "Örhängen", price: "799 kr", image: "/Products/introPiece1.jpg" },
-      { id: 4, name: "Ring", price: "1299 kr", image: "/Products/introP2.jpg" },
-    ],
   };
 
   return (
@@ -51,8 +45,7 @@ const Products = () => {
           {selectedCategory && (
             <ProductDisplay
               products={productsByCategory[selectedCategory as keyof typeof productsByCategory]}
-              categoryName={selectedCategory === 'clothes' ? 'Kläder' : 
-                          selectedCategory === 'bags' ? 'Väskor' : 'Smycken'}
+              categoryName={selectedCategory === 'clothes' ? 'Kläder' : 'Väskor'}
             />
           )}
         </div>

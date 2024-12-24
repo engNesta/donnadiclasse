@@ -19,16 +19,10 @@ const CategoriesGrid = ({ selectedCategory, onCategorySelect }: CategoriesGridPr
       description: 'Eleganta väskor för varje tillfälle',
       image: '/Products/introP2.jpg',
     },
-    {
-      id: 'jewelry',
-      title: 'Smycken',
-      description: 'Tidlösa italiensk smycken',
-      image: '/Products/introP3.jpg',
-    },
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {categories.map((category) => (
         <CategoryCard
           key={category.id}
