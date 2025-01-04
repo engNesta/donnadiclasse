@@ -35,10 +35,6 @@ const ProductDisplay = ({ products, categoryName }: ProductDisplayProps) => {
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               style={{ objectPosition: 'center top' }}
             />
-            <div className="absolute inset-0 bg-black bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-              <h3 className="text-white font-montserrat text-lg">{product.name}</h3>
-              <p className="text-white font-montserrat">{product.price}</p>
-            </div>
           </div>
         ))}
       </div>
