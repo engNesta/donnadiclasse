@@ -27,20 +27,17 @@ const CategoryCard = ({
   };
 
   return (
-    <div 
-      className="flex flex-col gap-4 cursor-pointer transition-all duration-300 hover:scale-[1.02]"
-      onClick={handleClick}
-    >
-      <img 
-        src={imageSrc}
-        alt={imageAlt}
-        className={`w-full h-full object-cover transition-all duration-300 ${
-          isSelected ? 'scale-[1.02]' : ''
+    <div className="flex flex-col items-center gap-4">
+      <Button 
+        onClick={handleClick}
+        className={`w-full py-8 text-lg font-montserrat transition-all duration-300 ${
+          isSelected 
+            ? 'bg-italian-red text-white hover:bg-italian-red/90' 
+            : 'bg-white text-rich-black hover:bg-gray-100'
         }`}
-      />
-      <div className="text-center">
-        <h6 className="text-lg font-montserrat">{title}</h6>
-      </div>
+      >
+        {title}
+      </Button>
     </div>
   );
 };
