@@ -17,7 +17,7 @@ const CategoriesGrid = ({ selectedCategory, onCategorySelect }: CategoriesGridPr
       id: 'bags',
       title: 'Väskor',
       description: 'Eleganta väskor för varje tillfälle',
-      image: '/Products/introP2.jpg',
+      image: '/Products/Bags/Bag 1.jpg',
     },
   ];
 
