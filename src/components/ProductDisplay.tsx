@@ -27,7 +27,7 @@ const ProductDisplay = ({ products, categoryName }: ProductDisplayProps) => {
         {products.map((product) => (
           <div 
             key={product.id} 
-            className="group relative overflow-hidden aspect-[3/4] rounded-sm max-w-sm mx-auto w-full"
+            className="group relative overflow-hidden aspect-[4/3] rounded-sm max-w-sm mx-auto w-full"
           >
             <img
               src={product.image}
