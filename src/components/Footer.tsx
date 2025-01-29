@@ -44,11 +44,11 @@ const Footer = ({ className = "" }: FooterProps) => {
           <div>
             <h3 className="font-montserrat text-sm">Kontakt</h3>
             <p className="font-montserrat text-sm">Email: info@donnadiclasse.se</p>
-            <p className="font-montserrat text-sm">Tel: +46-XXX-XXXX</p>
+            <p className="font-montserrat text-sm">Tel: +46 70 999 38 02</p>
           </div>
         </div>
         <div className="border-t border-soft-white/10 mt-4 pt-4 text-center">
-          <p className="font-montserrat text-sm">© 2024 Donna di Classe. All rights reserved.</p>
+          <p className="font-montserrat text-sm">© 2025 Donna di Classe. All rights reserved.</p>
         </div>
       </div>
     </footer>
