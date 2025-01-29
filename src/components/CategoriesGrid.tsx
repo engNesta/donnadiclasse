@@ -10,13 +10,11 @@ const CategoriesGrid = ({ selectedCategory, onCategorySelect }: CategoriesGridPr
     {
       id: 'clothes',
       title: 'Kläder',
-      description: 'Upptäck vår exklusiva klädkollektion',
       image: '/Products/introPiece1.jpg',
     },
     {
       id: 'bags',
       title: 'Väskor',
-      description: 'Eleganta väskor för varje tillfälle',
       image: '/Products/Bags/Bag 1.jpg',
     },
   ];
@@ -27,7 +25,6 @@ const CategoriesGrid = ({ selectedCategory, onCategorySelect }: CategoriesGridPr
         <CategoryCard
           key={category.id}
           title={category.title}
-          description={category.description}
           imageSrc={category.image}
           imageAlt={`${category.title} collection`}
           isSelected={selectedCategory === category.id}
