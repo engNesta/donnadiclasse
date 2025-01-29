@@ -2,27 +2,22 @@ import { Button } from "./ui/button";
 
 interface CategoryCardProps {
   title: string;
-  description: string;
   imageSrc: string;
   imageAlt: string;
   isSelected: boolean;
   onSelect: () => void;
 }
 
-const CategoryCard = ({
-  title,
-  description,
-  imageSrc,
-  imageAlt,
-  isSelected,
-  onSelect,
-}: CategoryCardProps) => {
+const CategoryCard = ({ title, imageSrc, imageAlt, isSelected, onSelect }: CategoryCardProps) => {
   const handleClick = () => {
     onSelect();
-    // Find the products grid and scroll to it
+    // Scroll to products grid with smooth animation
     const productsGrid = document.querySelector('[data-products-grid]');
     if (productsGrid) {
-      productsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      productsGrid.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
     }
   };
 
