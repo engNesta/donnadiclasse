@@ -1,4 +1,3 @@
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductGrid from "../components/ProductGrid";
@@ -24,7 +23,7 @@ const Index = () => {
             preload="auto"
             className="absolute top-0 left-0 w-full h-full object-cover"
           >
-            <source src="https://imgur.com/0VvVrjg" type="video/mp4" />
+            <source src="https://i.imgur.com/0VvVrjg.mp4" type="video/mp4" />
             Din webbläsare stöder inte videotaggen.
           </video>
           {/* Add a semi-transparent black overlay */}
