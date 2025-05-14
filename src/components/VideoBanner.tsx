@@ -1,3 +1,4 @@
+
 const VideoBanner = () => {
   return (
     <div className="relative w-full h-[40vh] overflow-hidden">
@@ -14,7 +15,7 @@ const VideoBanner = () => {
           video.playbackRate = 0.4;
         }}
       >
-        <source src="/bannerVid.mp4" type="video/mp4" />
+        <source src="https://i.imgur.com/u5kBjCy.mp4" type="video/mp4" />
         Din webbläsare stöder inte videotaggen.
       </video>
       {/* Add a semi-transparent overlay */}
