@@ -1,3 +1,4 @@
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CategoriesGrid from "../components/CategoriesGrid";
@@ -10,14 +11,14 @@ const Products = () => {
 
   const productsByCategory = {
     clothes: [
-      { id: 1, name: "", price: "", image: "Products/outfits/Outfit 1.jpg" },
-      { id: 2, name: "", price: "", image: "Products/outfits/Outfit 2.jpg" },
-      { id: 3, name: "", price: "", image: "Products/outfits/Outfit 3.jpg" },
-      { id: 4, name: "", price: "", image: "Products/outfits/Outfit 4.jpg" },
-      { id: 5, name: "", price: "", image: "Products/outfits/Outfit 5.jpg" },
-      { id: 6, name: "", price: "", image: "Products/outfits/Outfit 6.jpg" },
-      { id: 7, name: "", price: "", image: "Products/outfits/Outfit 7.jpg" },
-      { id: 8, name: "", price: "", image: "Products/outfits/Outfit 8.jpg" },
+      { id: 1, name: "", price: "", image: "https://i.imgur.com/mv7b5bO.jpg" },
+      { id: 2, name: "", price: "", image: "https://i.imgur.com/9D2naNi.jpg" },
+      { id: 3, name: "", price: "", image: "https://i.imgur.com/SGdK65k.jpg" },
+      { id: 4, name: "", price: "", image: "https://i.imgur.com/Ouam2xR.jpg" },
+      { id: 5, name: "", price: "", image: "https://i.imgur.com/hZIeVfG.jpg" },
+      { id: 6, name: "", price: "", image: "https://i.imgur.com/8fHh575.jpg" },
+      { id: 7, name: "", price: "", image: "https://i.imgur.com/z3MGLBA.jpg" },
+      { id: 8, name: "", price: "", image: "https://i.imgur.com/2TrIexg.jpg" },
     ],
     bags: [
       { id: 1, name: "", price: "", image: "Products/Bags/Bag 1.jpg" },
