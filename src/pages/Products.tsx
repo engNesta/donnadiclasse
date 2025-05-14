@@ -11,14 +11,14 @@ const Products = () => {
 
   const productsByCategory = {
     clothes: [
-      { id: 1, name: "", price: "", image: "https://i.imgur.com/JKARGfm.jpg" },
-      { id: 2, name: "", price: "", image: "https://i.imgur.com/jWWYUI7.jpg" },
-      { id: 3, name: "", price: "", image: "https://i.imgur.com/TDldsk3.jpg" },
-      { id: 4, name: "", price: "", image: "https://i.imgur.com/qw3Fzph.jpg" },
-      { id: 5, name: "", price: "", image: "https://i.imgur.com/UOEAFAN.jpg" },
-      { id: 6, name: "", price: "", image: "https://i.imgur.com/9EHxINs.jpg" },
-      { id: 7, name: "", price: "", image: "https://i.imgur.com/mtdpH9e.jpg" },
-      { id: 8, name: "", price: "", image: "https://i.imgur.com/VkqIylF.jpg" },
+      { id: 1, name: "", price: "", image: "https://i.imgur.com/mv7b5bO.jpg" },
+      { id: 2, name: "", price: "", image: "https://i.imgur.com/9D2naNi.jpg" },
+      { id: 3, name: "", price: "", image: "https://i.imgur.com/SGdK65k.jpg" },
+      { id: 4, name: "", price: "", image: "https://i.imgur.com/Ouam2xR.jpg" },
+      { id: 5, name: "", price: "", image: "https://i.imgur.com/hZIeVfG.jpg" },
+      { id: 6, name: "", price: "", image: "https://i.imgur.com/8fHh575.jpg" },
+      { id: 7, name: "", price: "", image: "https://i.imgur.com/z3MGLBA.jpg" },
+      { id: 8, name: "", price: "", image: "https://i.imgur.com/2TrIexg.jpg" },
     ],
     bags: [
       { id: 1, name: "", price: "", image: "Products/Bags/Bag 1.jpg" },
