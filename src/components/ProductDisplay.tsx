@@ -1,3 +1,4 @@
+
 interface Product {
   id: number;
   name: string;
@@ -23,7 +24,7 @@ const ProductDisplay = ({ products, categoryName }: ProductDisplayProps) => {
       <h2 className="text-2xl font-playfair text-center mb-8">
         Våra {categoryName}
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto px-4">
+      <div className="grid grid-cols-2 gap-8 max-w-5xl mx-auto px-4">
         {products.map((product) => (
           <div 
             key={product.id} 
