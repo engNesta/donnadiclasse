@@ -1,3 +1,4 @@
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProductGrid from "../components/ProductGrid";
@@ -76,7 +77,7 @@ const Index = () => {
                     video.playbackRate = 0.75;
                   }}
                 >
-                  <source src="/LuxDorOp.mp4" type="video/mp4" />
+                  <source src="https://i.imgur.com/6igHrf2.mp4" type="video/mp4" />
                   Din webbläsare stöder inte videotaggen.
                 </video>
                 {/* Add a semi-transparent overlay */}
