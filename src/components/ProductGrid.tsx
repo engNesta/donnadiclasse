@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
@@ -9,22 +10,22 @@ const ProductGrid = () => {
   const products = [
     {
       id: 1,
-      image: "/Products/introPiece1.jpg",
+      image: "https://i.imgur.com/HWrcoro.jpg",
       alt: "Elegant Italienskt Mode 1"
     },
     {
       id: 2,
-      image: "/Products/introP2.jpg",
+      image: "https://i.imgur.com/JVZDPb6.jpg",
       alt: "Elegant Italienskt Mode 2"
     },
     {
       id: 3,
-      image: "/Products/introP3.jpg",
+      image: "https://i.imgur.com/aUhn7Th.jpg",
       alt: "Elegant Italienskt Mode 3"
     },
     {
       id: 4,
-      image: "/Products/introP4.jpg",
+      image: "https://i.imgur.com/Bwan1fb.jpg",
       alt: "Elegant Italienskt Mode 4"
     },
   ];
